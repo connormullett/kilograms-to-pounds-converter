@@ -1,1 +1,21 @@
-<p>converter works!</p>
+
+<h1>Convert</h1>
+
+<div>
+  <label>Pounds: 
+    <input [(ngModel)]="p" placeholder="pounds" />
+  </label>
+  <button mat-raised-button type="submit" (click)="onPoundsSubmit()">Convert</button>
+  <span>{{ kDisplay }}</span>
+</div>
+
+<hr>
+
+<div>
+  <label>Kilos: 
+    <input [(ngModel)]="k" placeholder="Celsius" />
+  </label>
+  <button mat-raised-button type="submit" (click)="onKilosSubmit()">Convert</button>
+  <span>{{ pDisplay }}</span>
+</div>
+
